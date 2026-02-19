@@ -1,0 +1,8 @@
+{
+  "/api/user/:id": "/user/:id",
+  "/api/user/profile/:id": "/user/:id",
+  "/api/user/edit/:id": "/user/:id",
+  "/api/user/register": "/user",
+  "/api/goals": "/goals",
+  "/api/goals/:id": "/goals/:id"
+}

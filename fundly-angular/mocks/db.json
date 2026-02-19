@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "email": "john.doe@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "employmentStatus": "EMPLOYED",
+      "monthlyAllowance": 5000.00,
+      "localCurrency": "USD",
+      "expenses": [],
+      "expenseCategories": [],
+      "loans": [],
+      "goalActivities": [],
+      "reports": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440001",
+      "email": "jane.smith@example.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "employmentStatus": "SELF_EMPLOYED",
+      "monthlyAllowance": 7500.00,
+      "localCurrency": "USD",
+      "expenses": [],
+      "expenseCategories": [],
+      "loans": [],
+      "goalActivities": [],
+      "reports": []
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "email": "mike.johnson@example.com",
+      "firstName": "Mike",
+      "lastName": "Johnson",
+      "employmentStatus": "EMPLOYED",
+      "monthlyAllowance": 4500.00,
+      "localCurrency": "EUR",
+      "expenses": [],
+      "expenseCategories": [],
+      "loans": [],
+      "goalActivities": [],
+      "reports": []
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-001",
+      "name": "Buy a House",
+      "description": "Save for a down payment on a residential property",
+      "priorityCategory": "HIGH",
+      "targetAmount": 50000,
+      "currentAmount": 12500,
+      "lifeGoal": true,
+      "ownerId": "550e8400-e29b-41d4-a716-446655440000",
+      "participantsIds": []
+    },
+    {
+      "id": "goal-002",
+      "name": "Emergency Fund",
+      "description": "Build an emergency fund covering 6 months of expenses",
+      "priorityCategory": "HIGH",
+      "targetAmount": 30000,
+      "currentAmount": 15000,
+      "lifeGoal": false,
+      "ownerId": "550e8400-e29b-41d4-a716-446655440000",
+      "participantsIds": []
+    },
+    {
+      "id": "goal-003",
+      "name": "Vacation to Europe",
+      "description": "Plan and save for a 2-week European vacation",
+      "priorityCategory": "MEDIUM",
+      "targetAmount": 5000,
+      "currentAmount": 2000,
+      "lifeGoal": false,
+      "ownerId": "550e8400-e29b-41d4-a716-446655440001",
+      "participantsIds": []
+    },
+    {
+      "id": "goal-004",
+      "name": "Start a Business",
+      "description": "Save capital to start an online business venture",
+      "priorityCategory": "HIGH",
+      "targetAmount": 25000,
+      "currentAmount": 8000,
+      "lifeGoal": true,
+      "ownerId": "550e8400-e29b-41d4-a716-446655440001",
+      "participantsIds": []
+    },
+    {
+      "id": "goal-005",
+      "name": "Car Purchase",
+      "description": "Save for a new fuel-efficient car",
+      "priorityCategory": "MEDIUM",
+      "targetAmount": 20000,
+      "currentAmount": 5000,
+      "lifeGoal": false,
+      "ownerId": "550e8400-e29b-41d4-a716-446655440002",
+      "participantsIds": []
+    },
+    {
+      "id": "goal-006",
+      "name": "Education Fund",
+      "description": "Save for additional professional certifications and courses",
+      "priorityCategory": "MEDIUM",
+      "targetAmount": 10000,
+      "currentAmount": 4500,
+      "lifeGoal": false,
+      "ownerId": "550e8400-e29b-41d4-a716-446655440002",
+      "participantsIds": []
+    }
+  ]
+}
