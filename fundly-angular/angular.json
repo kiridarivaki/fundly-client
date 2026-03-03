@@ -32,7 +32,9 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/styles/styles.scss",
+              "src/styles/tailwind.css"
             ],
             "scripts": []
           },
@@ -101,7 +103,9 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/styles/styles.scss",
+              "src/styles/tailwind.css"
             ],
             "scripts": []
           }
