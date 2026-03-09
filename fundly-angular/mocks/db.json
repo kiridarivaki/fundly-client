@@ -43,6 +43,67 @@
       "reports": []
     }
   ],
+  "expenseCategories": [
+    {
+      "id": "cat-001",
+      "name": "Housing",
+      "description": "Rent and housing costs",
+      "iconIdentifier": "home",
+      "budgetType": "NEEDS",
+      "userId": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    {
+      "id": "cat-002",
+      "name": "Groceries",
+      "description": "Food and groceries",
+      "iconIdentifier": "shopping_cart",
+      "budgetType": "NEEDS",
+      "userId": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    {
+      "id": "cat-003",
+      "name": "Entertainment",
+      "description": "Streaming, movies, and hobbies",
+      "iconIdentifier": "movie",
+      "budgetType": "WANTS",
+      "userId": "550e8400-e29b-41d4-a716-446655440001"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-001",
+      "name": "Monthly Rent",
+      "description": "Apartment rent payment",
+      "amount": 1200,
+      "date": "2026-03-01",
+      "frequency": "MONTHLY",
+      "futureExpense": false,
+      "categoryId": "cat-001",
+      "userId": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    {
+      "id": "exp-002",
+      "name": "Supermarket",
+      "description": "Weekly groceries",
+      "amount": 140,
+      "date": "2026-03-06",
+      "frequency": "WEEKLY",
+      "futureExpense": false,
+      "categoryId": "cat-002",
+      "userId": "550e8400-e29b-41d4-a716-446655440000"
+    },
+    {
+      "id": "exp-003",
+      "name": "Cinema",
+      "description": "Movie night",
+      "amount": 28,
+      "date": "2026-03-02",
+      "frequency": "ONE_TIME",
+      "futureExpense": false,
+      "categoryId": "cat-003",
+      "userId": "550e8400-e29b-41d4-a716-446655440001"
+    }
+  ],
   "goals": [
     {
       "id": "goal-001",
