@@ -1,1 +1,54 @@
-{}
+{
+  "register": {
+    "createAccount": "Create your account",
+    "starterForm": "Simple starter form for registration.",
+    "labels": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "employmentStatus": "Employment status",
+      "monthlyAllowance": "Monthly allowance",
+      "localCurrency": "Local currency"
+    },
+    "placeholders": {
+      "selectEmploymentStatus": "Select employment status",
+      "selectLocalCurrency": "Select local currency"
+    },
+    "employmentStatusOptions": {
+      "EMPLOYED": "Employed",
+      "SELF_EMPLOYED": "Self-employed",
+      "UNEMPLOYED": "Unemployed",
+      "STUDENT": "Student",
+      "RETIRED": "Retired"
+    },
+    "currencyOptions": {
+      "USD": "US Dollar",
+      "EUR": "Euro",
+      "GBP": "British Pound",
+      "JPY": "Japanese Yen",
+      "CAD": "Canadian Dollar",
+      "AUD": "Australian Dollar",
+      "CHF": "Swiss Franc",
+      "CNY": "Chinese Yuan",
+      "INR": "Indian Rupee",
+      "MXN": "Mexican Peso"
+    },
+    "actions": {
+      "register": "Register"
+    },
+    "haveAccount": "Already have an account? Login"
+  },
+  "validation": {
+    "required": "This field is required",
+    "password": {
+      "required": "Password is required",
+      "complexity": "Password must have 8+ characters, uppercase, lowercase, number, and special character"
+    },
+    "confirmPassword": {
+      "required": "Confirm password is required",
+      "mismatch": "Passwords do not match"
+    }
+  }
+}

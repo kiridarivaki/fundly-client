@@ -1,0 +1,54 @@
+{
+  "register": {
+    "createAccount": "Δημιουργία λογαριασμού",
+    "starterForm": "Απλή φόρμα εγγραφής.",
+    "labels": {
+      "firstName": "Όνομα",
+      "lastName": "Επώνυμο",
+      "email": "Email",
+      "password": "Κωδικός πρόσβασης",
+      "confirmPassword": "Επιβεβαίωση κωδικού",
+      "employmentStatus": "Εργασιακή κατάσταση",
+      "monthlyAllowance": "Μηνιαίο επίδομα",
+      "localCurrency": "Τοπικό νόμισμα"
+    },
+    "placeholders": {
+      "selectEmploymentStatus": "Επιλέξτε εργασιακή κατάσταση",
+      "selectLocalCurrency": "Επιλέξτε τοπικό νόμισμα"
+    },
+    "employmentStatusOptions": {
+      "EMPLOYED": "Μισθωτός",
+      "SELF_EMPLOYED": "Αυτοαπασχολούμενος",
+      "UNEMPLOYED": "Άνεργος",
+      "STUDENT": "Φοιτητής",
+      "RETIRED": "Συνταξιούχος"
+    },
+    "currencyOptions": {
+      "USD": "Δολάριο ΗΠΑ",
+      "EUR": "Ευρώ",
+      "GBP": "Λίρα Αγγλίας",
+      "JPY": "Γιεν Ιαπωνίας",
+      "CAD": "Δολάριο Καναδά",
+      "AUD": "Δολάριο Αυστραλίας",
+      "CHF": "Ελβετικό φράγκο",
+      "CNY": "Γουάν Κίνας",
+      "INR": "Ρουπία Ινδίας",
+      "MXN": "Πέσο Μεξικού"
+    },
+    "actions": {
+      "register": "Εγγραφή"
+    },
+    "haveAccount": "Έχετε ήδη λογαριασμό; Σύνδεση"
+  },
+  "validation": {
+    "required": "Αυτό το πεδίο είναι υποχρεωτικό",
+    "password": {
+      "required": "Ο κωδικός πρόσβασης είναι υποχρεωτικός",
+      "complexity": "Ο κωδικός πρόσβασης πρέπει να έχει 8+ χαρακτήρες, κεφαλαία, πεζά, αριθμό και ειδικό χαρακτήρα"
+    },
+    "confirmPassword": {
+      "required": "Η επιβεβαίωση του κωδικού πρόσβασης είναι υποχρεωτική",
+      "mismatch": "Οι κωδικοί πρόσβασης δεν ταιριάζουν"
+    }
+  }
+}
