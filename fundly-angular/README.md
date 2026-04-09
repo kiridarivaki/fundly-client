@@ -1,59 +1,33 @@
-# FundlyAngular
+# Fundly Angular Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+Angular 19 frontend for Fundly, configured to run with json-server for local development.
 
-## Development server
-
-To start a local development server, run:
+## Getting Started
 
 ```bash
-ng serve
+npm install
+
+# Terminal 1: Start mock API
+npm run start:json-server
+
+# Terminal 2: Start Angular dev server  
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The app runs on `http://localhost:4200` with API mocked on `http://localhost:3000`.
 
-## Code scaffolding
+## Project Structure
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+src/app/
+├── client/        # Services and DTOs
+├── shared/        # Domain models, enums, utilities
+└── environments/  # Config per build environment
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Architecture
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Standalone Components** with Angular 19 APIs
+- **Service Layer** with centralized `UrlService` for API URLs
+- **Path Aliases** for clean imports (`@shared/*`, `@client/*`, `@environments/*`)
+- **Mock Data** in `db.json` with `routes.json` for endpoint mapping
