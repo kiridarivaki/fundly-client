@@ -1,0 +1,29 @@
+<mat-toolbar class="fixed top-0 w-full z-50 bg-gradient-to-r from-teal-100 to-teal-200 shadow-md">
+  <div class="flex justify-between items-center w-full px-8">
+    
+    <nav class="flex gap-8">
+      <a routerLink="/expenses" routerLinkActive="active" class="text-gray-700 font-medium hover:text-teal-700 transition">
+        Manage Expenses
+      </a>
+      <a routerLink="/savings" routerLinkActive="active" class="text-teal-600 font-medium hover:text-teal-800 transition">
+        Save money
+      </a>
+    </nav>
+
+    <div class="absolute left-1/2 transform -translate-x-1/2">
+      <span class="text-3xl font-bold text-teal-700">Fundly</span>
+    </div>
+
+    <div class="flex gap-6 items-center ml-auto">
+      <span class="text-gray-700">Hi {{ userName }}!</span>
+      <a routerLink="/profile" mat-button class="text-gray-700 hover:bg-teal-300">
+        Profile
+      </a>
+      <button mat-icon-button (click)="logout()" class="text-gray-700 hover:bg-teal-300">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
+
+<div class="h-16"></div>
