@@ -1,0 +1,116 @@
+<ng-container *transloco="let t; prefix: 'register'">
+  <section class="register-wrapper">
+    <div class="register-card">
+      <h2>{{ t('createAccount') }}</h2>
+      <p>{{ t('starterForm') }}</p>
+
+      <form [formGroup]="registrationData" (ngSubmit)="register()" class="register-form">
+        <label for="firstName">{{ t('labels.firstName') }}</label>
+        <input
+          id="firstName"
+          name="firstName"
+          type="text"
+          formControlName="firstName"
+          required
+        />
+        <div *ngIf="getRequiredError('firstName') as error" class="error-messages">
+          <p class="error-text">{{ error }}</p>
+        </div>
+
+        <label for="lastName">{{ t('labels.lastName') }}</label>
+        <input
+          id="lastName"
+          name="lastName"
+          type="text"
+          formControlName="lastName"
+          required
+        />
+        <div *ngIf="getRequiredError('lastName') as error" class="error-messages">
+          <p class="error-text">{{ error }}</p>
+        </div>
+
+        <label for="email">{{ t('labels.email') }}</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          formControlName="email"
+          required
+        />
+        <div *ngIf="getRequiredError('email') as error" class="error-messages">
+          <p class="error-text">{{ error }}</p>
+        </div>
+
+        <label for="password">{{ t('labels.password') }}</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          formControlName="password"
+          required
+        />
+        <div *ngIf="getRequiredError('password') as error" class="error-messages">
+          <p class="error-text">{{ error }}</p>
+        </div>
+        <div *ngIf="getPasswordErrors().length > 0" class="error-messages">
+          <p *ngFor="let error of getPasswordErrors()" class="error-text">{{ error }}</p>
+        </div>
+
+        <label for="confirmPassword">{{ t('labels.confirmPassword') }}</label>
+        <input
+          id="confirmPassword"
+          name="confirmPassword"
+          type="password"
+          formControlName="confirmPassword"
+          required
+        />
+        <div *ngIf="getRequiredError('confirmPassword') as error" class="error-messages">
+          <p class="error-text">{{ error }}</p>
+        </div>
+        <div *ngIf="getConfirmPasswordErrors().length > 0" class="error-messages">
+          <p *ngFor="let error of getConfirmPasswordErrors()" class="error-text">{{ error }}</p>
+        </div>
+
+        <label for="employmentStatus">{{ t('labels.employmentStatus') }}</label>
+        <select id="employmentStatus" name="employmentStatus" formControlName="employmentStatus" required>
+          <option value="" disabled>{{ t('placeholders.selectEmploymentStatus') }}</option>
+          <option *ngFor="let status of employmentStatuses" [value]="status">
+            {{ t('employmentStatusOptions.' + status) }}
+          </option>
+        </select>
+        <div *ngIf="getRequiredError('employmentStatus') as error" class="error-messages">
+          <p class="error-text">{{ error }}</p>
+        </div>
+
+        <label for="monthlyAllowance">{{ t('labels.monthlyAllowance') }}</label>
+        <input
+          id="monthlyAllowance"
+          name="monthlyAllowance"
+          type="number"
+          min="0"
+          step="0.01"
+          formControlName="monthlyAllowance"
+          required
+        />
+        <div *ngIf="getRequiredError('monthlyAllowance') as error" class="error-messages">
+          <p class="error-text">{{ error }}</p>
+        </div>
+
+        <label for="localCurrency">{{ t('labels.localCurrency') }}</label>
+        <select id="localCurrency" name="localCurrency" formControlName="localCurrency" required>
+          <option value="" disabled>{{ t('placeholders.selectLocalCurrency') }}</option>
+          <option *ngFor="let currency of currencies" [value]="currency">
+            {{ t('currencyOptions.' + currency) }}
+          </option>
+        </select>
+        <div *ngIf="getRequiredError('localCurrency') as error" class="error-messages">
+          <p class="error-text">{{ error }}</p>
+        </div>
+
+        <button type="submit" [disabled]="!registrationData.valid">{{ t('actions.register') }}</button>
+      </form>
+
+      <a routerLink="/auth/login">{{ t('haveAccount') }}</a>
+    </div>
+  </section>
+</ng-container>
