@@ -12,7 +12,12 @@ export const appRoutes: Route[] = [
         loadChildren: async () =>
           import('./features/home/home.routes').then((m) => m.HOME_ROUTES),
         data: { preload: true },
-      }
+      },
+      {
+        path: AUTH_PATHS.BASE,
+        loadChildren: async () =>
+          import('./features/auth/auth.routes').then((m) => m.AUTH_ROUTES),
+      },
     ],
   },
 ];
